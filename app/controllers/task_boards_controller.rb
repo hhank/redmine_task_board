@@ -11,9 +11,9 @@ class TaskBoardsController < ApplicationController
     @project = @version.project
     
     @issues_to_do = Issue.find_by_version_id_and_status_names(@version.id, ['New'])
-    @issues_in_progress = Issue.find_by_version_id_and_status_names(@version.id, ['In Progress', 'Feedback Requested'])    
-    @issues_to_verify = Issue.find_by_version_id_and_status_names(@version.id, ['Completed'])
-    @issues_closed = Issue.find_by_version_id_and_status_names(@version.id, ['Rejected', 'Closed'])
+    @issues_in_progress = Issue.find_by_version_id_and_status_names(@version.id, ['In Progress'])    
+    @issues_to_verify = Issue.find_by_version_id_and_status_names(@version.id, ['Feedback'])
+    @issues_closed = Issue.find_by_version_id_and_status_names(@version.id, ['Resolved', 'Rejected', 'Closed'])
   end
   
   protected
