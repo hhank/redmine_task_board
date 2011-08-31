@@ -5,6 +5,8 @@
             <a href="/issues/<%= issue.id %>">
             #<%= issue.id %> - 
             <%= issue.subject %>
+            <p align="right">
+            <%= issue.assignee %></p>
             </a>
         </div>
     <% end %>
