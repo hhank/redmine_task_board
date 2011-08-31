@@ -8,6 +8,6 @@
 <div id="task-columns">
     <%= render :partial => 'task_column', :locals => {:title => 'To do', :issues => @issues_to_do} %>
     <%= render :partial => 'task_column', :locals => {:title => 'In progress', :issues => @issues_in_progress} %>
-    <%= render :partial => 'task_column', :locals => {:title => 'QA', :issues => @issues_to_verify} %>
-    <%= render :partial => 'task_column', :locals => {:title => 'Closed', :issues => @issues_closed} %>
+    <%= render :partial => 'task_column', :locals => {:title => 'Verify', :issues => @issues_to_verify} %>
+    <%= render :partial => 'task_column', :locals => {:title => 'Done', :issues => @issues_closed} %>
 </div>
