@@ -1,7 +1,8 @@
 <div class="task-column">
     <h3><%= title %></h3>
     <% issues.each do |issue| %>
-        <div class="issue">
+        <div class="issue tape-<%= issue.tracker %>">
+            <%= issue.tracker %>
             <a href="/issues/<%= issue.id %>">
             #<%= issue.id %> - 
             <%= issue.subject %>

@@ -18,7 +18,7 @@
 }
 
 
-.issue.taped-feature:after {
+.issue.tape-Feature:after {
   display: block;
   content: "";
   position: absolute;
@@ -37,7 +37,7 @@
 
 }
 
-.issue.taped-bug:after {
+.issue.tape-Bug:after {
   display: block;
   content: "";
   position: absolute;
@@ -55,7 +55,7 @@
   -o-transform: rotate(-1deg);
 }
 
-.issue.taped-support:after {
+.issue.tape-Support:after {
   display: block;
   content: "";
   position: absolute;
